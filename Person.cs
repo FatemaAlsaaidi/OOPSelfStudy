@@ -14,5 +14,16 @@ namespace OOPSelfStudy
         public int Age;
         public string PhoneNumber;
         public string career;
+
+        public Person(string name, int age, string phoneNumber)
+        {
+            Name = name;
+            Age = age;
+            PhoneNumber = phoneNumber;
+
+            Console.WriteLine("Person success added");
+        }
     }
+
+    
 }

@@ -169,12 +169,18 @@ Here's a more detailed explanation:
 
 - **Types:**
     1. Default Constructor 
+    - If only declare the fields of class inside class without create constructor, class has constructore be default without parameters 
     ![](img/DefultConstructor_1.png) 
      Access to attributes inside class:
     ![](img/DefultConstructor_2.png) 
     
     2. Parameterized Constructor
-    - 
+    
+    ![](img/ParameterizedConstructor_1.png)
+    ![](img/ParameterizedConstructor_2.png)
+    ![](img/ParameterizedConstructor_3.png)
+
+
     3. Copy Constructor
     - 
     4. Static Constructor
