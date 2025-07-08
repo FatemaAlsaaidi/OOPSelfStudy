@@ -19,3 +19,11 @@
 			- set
 			- map
 
+## Overview of memory
+Stack: In stack items, things get on the top of each-other, means gonna be faster and more efficient to be processed!...
+
+So there is always an index to point the specific item, also processing gonna be faster, there is relationship between the items as well!...
+
+Heap: No order, processing gonna be slower and values are messed up together with no specific order or index... there are random and there is no relationship between them... so execution and usage time could be vary...
+
+![Stack vs Heap](img/Slack_Heap.png) 
