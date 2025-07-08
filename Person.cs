@@ -15,6 +15,7 @@ namespace OOPSelfStudy
         public string PhoneNumber;
         public string career;
 
+        // Parameterized constructor 
         public Person(string name, int age, string phoneNumber)
         {
             Name = name;
@@ -23,7 +24,10 @@ namespace OOPSelfStudy
 
             Console.WriteLine("Person success added");
         }
+
+        // Copy constructor 
+
     }
 
-    
+
 }
