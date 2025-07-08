@@ -71,3 +71,71 @@ A way of writing programs by organizing code into “objects.” These objects repre
 ### Fields and methods
 ![](img/Attributes_Methods.png)
 ![](img/Methods.png)
+
+## Setters Vs Getters
+- Getters:
+
+A getter is a method (or accessor) that returns the value of a private field in a class.
+They allow other parts of the code to read the value of a private field without directly accessing it.
+In C#, a getter is defined using the get keyword within a property. 
+
+- Setters:
+
+A setter is a method (or accessor) that modifies the value of a private field in a class.
+They provide a controlled way to update the value of a private field, preventing direct modification from outside the class.
+In C#, a setter is defined using the set keyword within a property. It also has access to a special keyword value which represents the value being assigned. 
+
+- Properties:
+
+Properties in C# combine both getter and setter methods into a single construct.
+They provide a cleaner and more elegant syntax for accessing and modifying private fields compared to manually writing separate getter and setter methods.
+Properties allow you to encapsulate the access to a field, potentially adding logic within the getter or setter. 
+
+```
+public class Person
+{
+    private string name;
+
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+
+    private int age;
+
+    public int Age
+    {
+        get { return age; }
+        set
+        {
+            if (value >= 0)
+            {
+                age = value;
+            }
+            else
+            {
+                // Handle invalid age input (e.g., throw an exception, set to a default value)
+                age = 0; // Setting a default value
+            }
+        }
+    }
+}
+
+public class Example
+{
+    public static void Main(string[] args)
+    {
+        Person person = new Person();
+        person.Name = "John Doe";
+        person.Age = 30;
+
+        Console.WriteLine($"Name: {person.Name}, Age: {person.Age}"); // Output: Name: John Doe, Age: 30
+
+        person.Age = -5; // Trying to set an invalid age
+        Console.WriteLine($"Age after invalid set: {person.Age}"); // Output: Age after invalid set: 0
+    }
+}
+
+
+```
