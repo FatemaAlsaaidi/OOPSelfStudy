@@ -143,36 +143,39 @@ public class Example
 Class constructors are special methods within a class that are automatically called when a new object (an instance of the class) is created. They are used to initialize the object's attributes (properties) and prepare it for use. Constructors ensure that new objects are created in a valid state, often by setting initial values for the object's data members. 
 Here's a more detailed explanation:
 
-- Purpose:
+- **Purpose:**
     - Constructors are essential for initializing new objects. They allow you to set up the object's internal state when it's first created, ensuring it's ready to be used. 
 
-- Automatic Call:
+- **Automatic Call:**
     - Constructors are automatically invoked when you use the new keyword (or its equivalent in other languages) with the class name to create a new object. 
 
-- Naming:
+- **Naming:**
     - In many languages, constructors have the same name as the class itself. 
 
-- Parameters:
+- **Parameters:**
     - Constructors can accept parameters (arguments) that provide initial values for the object's attributes. 
 
-- Initialization:
+- **Initialization:**
    - The constructor's code typically sets the initial values for the object's properties, often based on the parameters passed to it. 
 
-- Example (Conceptual):
+- **Example (Conceptual):**
    - Imagine a Car class. Its constructor might take parameters like color, model, and year. When you create a new Car object, the constructor would set the color, model, and year properties of that specific car object to the values you provided when creating it. 
 
-- Overloading:
+- **Overloading:**
    - Many languages allow you to have multiple constructors in a class, each with different parameters. This is called constructor overloading, and it allows you to create objects with different initialization options. 
 
-- Special Cases:
+- **Special Cases:**
    - Some languages have different types of constructors, like default constructors (no parameters), parameterized constructors, copy constructors, and more. Each has its specific purpose. 
 
-- Types: 
-    1. Default  Constructor 
+- **Types:**
+    1. Default Constructor 
+    ![](img/DefultConstructor_1.png) 
+     Access to attributes inside class:
+    ![](img/DefultConstructor_2.png) 
+    
+    2. Parameterized Constructor
     - 
-    2. Parameterized  Constructor
+    3. Copy Constructor
     - 
-    3. Copy  Constructor
-    - 
-    4. Static  Constructor
+    4. Static Constructor
     - 
