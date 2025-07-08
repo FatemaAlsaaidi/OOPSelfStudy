@@ -69,4 +69,5 @@ A way of writing programs by organizing code into “objects.” These objects repre
 ![](img/Create_Class_Object_4.png)
 
 ### Fields and methods
-
+![](img/Attributes_Methods.png)
+![](img/Methods.png)
