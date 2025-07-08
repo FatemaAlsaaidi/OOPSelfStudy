@@ -62,4 +62,11 @@ A way of writing programs by organizing code into “objects.” These objects repre
 	![](img/OOP-Concept-Polymorphism.png)
 
 ## Create Class 
-### 
+### How to Create a Class and Object
+![](img/Create_Class_Object.png)
+![](img/Create_Class_Object_2.png)
+![](img/Create_Class_Object_3.png)
+![](img/Create_Class_Object_4.png)
+
+### Fields and methods
+
