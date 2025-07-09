@@ -21,12 +21,23 @@ namespace OOPSelfStudy
             Name = name;
             Age = age;
             PhoneNumber = phoneNumber;
+            Id = new Random().Next(1000, 9999); // Random ID generation
+            career = "Unemployed"; // Default career value
+            Console.WriteLine("Person success added with ID: " + Id);
 
-            Console.WriteLine("Person success added");
+
         }
 
         // Copy constructor 
-
+        public Person(Person person)
+        {
+            Id = person.Id;
+            Name = person.Name;
+            Age = person.Age;
+            PhoneNumber = person.PhoneNumber;
+            career = person.career;
+            Console.WriteLine("Person copy success added");
+        }
     }
 
 

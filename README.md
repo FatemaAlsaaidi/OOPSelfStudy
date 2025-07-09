@@ -183,8 +183,84 @@ Here's a more detailed explanation:
 
     3. Copy Constructor
     - Why Copy Constructor in OOP?
-    -
+    1. To create an exact copy of an object easily:
+
+       - When you want to duplicate an object with the same field values, the copy constructor handles it cleanly without manually copying each property every time.
+
+    2. To handle deep copies when objects contain references:
+
+       - If your object has fields that are references to other objects (e.g., arrays, lists, objects), using a simple assignment (=) will only copy the reference (shallow copy), not the actual data.
+
+       - A copy constructor can be written to perform a deep copy to ensure each object has its own independent copy of the referenced data. 
     
-    - 
-    4. Static Constructor
+```
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OOPSelfStudy
+{
+    class Person
+    {
+        // Create a fields
+        public int Id;
+        public string Name;
+        public int Age;
+        public string PhoneNumber;
+        public string career;
+
+        // Parameterized constructor 
+        public Person(string name, int age, string phoneNumber)
+        {
+            Name = name;
+            Age = age;
+            PhoneNumber = phoneNumber;
+            Id = new Random().Next(1000, 9999); // Random ID generation
+            career = "Unemployed"; // Default career value
+            Console.WriteLine("Person success added with ID: " + Id);
+
+
+        }
+
+        // Copy constructor 
+        public Person(Person person)
+        {
+            Id = person.Id;
+            Name = person.Name;
+            Age = person.Age;
+            PhoneNumber = person.PhoneNumber;
+            career = person.career;
+            Console.WriteLine("Person copy success added");
+        }
+    }
+
+
+}
+
+```
+
+in main class:
+```
+namespace OOPSelfStudy
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+            
+            // Create a new person using the parameterized constructor
+            Person person1 = new Person("Alice", 30, "123-456-7890");
+
+
+
+        }
+    }
+}
+
+```
+
+   4. Static Constructor
     - 
