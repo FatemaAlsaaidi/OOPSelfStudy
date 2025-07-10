@@ -263,4 +263,25 @@ namespace OOPSelfStudy
 ```
 
    4. Static Constructor
-    - 
+   - Static constructors are special constructors that are used to initialize static members of a class. They are called automatically before any static members are accessed or any static methods are called. Static constructors do not take parameters and cannot be called directly. They are typically used to set up static data or perform actions that need to occur only once for the class, such as initializing static fields or performing one-time setup tasks.
+   ```
+   using System;
+   namespace OOPSelfStudy
+   {
+       class StaticConstructorExample
+       {
+           public static int StaticValue;
+           // Static constructor
+           static StaticConstructorExample()
+           {
+               StaticValue = 42; // Initialize static field
+               Console.WriteLine("Static constructor called. StaticValue initialized to " + StaticValue);
+           }
+           public void DisplayValue()
+           {
+               Console.WriteLine("StaticValue: " + StaticValue);
+           }
+       }
+   }
+
+   ```

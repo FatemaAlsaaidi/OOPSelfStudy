@@ -38,6 +38,18 @@ namespace OOPSelfStudy
             career = person.career;
             Console.WriteLine("Person copy success added");
         }
+
+        // Static constructore
+        static Person()
+        {
+            Id = 0;
+            Name = "Unknown";
+            Age = 0;
+            PhoneNumber = "000-000-0000";
+            career = "Unemployed"; // Default career value
+            Console.WriteLine("Default person created with ID: " + Id);
+
+        }
     }
 
 
